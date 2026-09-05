@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+data/.memory-store.json
+data/.memory-seeded.json
