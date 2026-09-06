@@ -1,0 +1,5 @@
+# Railway использует Nixpacks для сборки. По умолчанию в python-образе нет
+# git, а requirements.txt ставит три пакета Anthropic прямо из GitHub
+# (git+https://...) — без git на этом шаге сборка падает. Явно добавляем.
+[phases.setup]
+aptPkgs = ["git"]
